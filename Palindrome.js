@@ -1,20 +1,15 @@
-let N=10;
-let str= "kunalmehra"
+str="madam"
+bag=""
+for(i=0; i<=str.length-1; i++){
 
-let a = N-1;
+ for(j=str.length-1; j>=0; j--){
 
-let bag="";
+   if(str[i]===str[j]){
 
-for(i=a;i>=0;i--){
-  bag=bag+str[i];
+   bag=bag+str[j] 
+   break;
 }
-let S;
 
-for(i=0;i<=str.length-1;i++){
-    if(str[i]==bag[i]){
-      S="Yes";
-  }else{
-      S="No";
-  }
 }
-  console.log(i)
+}if(bag===str){console.log("yes")}
+else {console.log("no")}

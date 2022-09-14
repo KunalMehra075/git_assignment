@@ -1,16 +1,11 @@
-limit=50;
-
-for(i=11;i<=50;i++){
-  let count=0;
-
-  for(let j=1;j<=i;j++){
-    if(i%j==0){
-      count++;
-    }
-}
-  if(count==2){
-    console.log(i,"Prime")
-  }else{
-    console.log(i,"Not a Prime")
+let num = 17;
+let count = 0;
+for(let i = 1; i <= num; i++){
+  if(num % i === 0){
+    count++;
   }
 }
+if(count <= 2)
+    console.log("Yes");
+  else
+    console.log("No");
